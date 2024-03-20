@@ -19,7 +19,7 @@ def do_something(json_array):
 
     first_element = json_array[0]
     target_url = first_element['url']   
-    google_api_key = 'AIzaSyCoLQnJWSk6zPOsdZ0Hq0jNC6deWR7x8BE'
+    google_api_key = 'Enter API key here'
     genai.configure(api_key=google_api_key)
     user_prompt = 'Generate etsy titles and tags for this image'
     if target_url.startswith('data:image/'):
